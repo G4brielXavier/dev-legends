@@ -1,6 +1,6 @@
 .title {
     position: absolute;
-    top: -80px;
+    top: -30px;
     left: -2px;
 
     font-size: 80px;
@@ -27,7 +27,7 @@ a:hover {
     font-weight: 100;
 
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 2px;
 
     font-size: 20px;
@@ -82,6 +82,16 @@ main {
 
     animation: toRight 1s ease forwards;
     animation-delay: 1s;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #name {
@@ -232,5 +242,90 @@ main {
     }
     to {
         transform: translateX(0px);
+    }
+}
+
+
+@media (max-width: 590px)
+{
+    .SelectArea {
+        position: absolute;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 30px;
+    
+        top: 86%;
+        left: 0%;
+    
+        width: 100%;
+
+        border-radius: 0;
+
+        
+        overflow-x: scroll;
+        padding: 10px;
+    }
+
+    .SelectArea::scroll-marker {
+        display: none;
+    }
+
+    #ic_normal img {
+        width: 40px;
+        height: 60px;
+        border-radius: 80px;
+    
+        object-fit: cover;
+        transition: 0.2s;
+        z-index: 2;
+    }
+
+    #ic_normal img:hover {
+        width: 40px;
+        height: 80px;
+        border-radius: 80px;
+    
+        object-fit: cover;
+        transition: 0.2s;
+    }
+
+    main {
+        position: absolute;
+    
+        width: 80%;
+        margin: 85% 5%;
+    
+        transform: translateX(-1000px);
+    
+        animation: toRight 1s ease forwards;
+        animation-delay: 1s;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #name {
+        font-size: 18px;
+    }
+
+    #desc {
+        font-size: 14px;
+    }
+
+    .title {
+        position: absolute;
+        top: -10px;
+        left: 2px;
+    
+        font-size: 50px;
+        opacity: 0.2;
+        z-index: 2;
+    
+        font-weight: 100;
+    
+        animation: toRight 1s ease forwards;
     }
 }
