@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devs Legends</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+<body>
+
+    <h1 class="title">DEV LEGENDS</h1>
+    <p class="creator">by <a href="https://dotxavierket.vercel.app" target="_blank">Gabriel Xavier</a></p>
+
+    <div id="box">
+        <video autoplay loop class="videoBox">
+            <source src="./assets/videos/lucasmontano.mp4" id="videoBanner" type="video/mp4">
+        </video>
+    </div>
+    
+    <main>
+        <div id="info">
+            <h1 id="name">Lucas Montano</h1>
+            <p id="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, fugit. Non repellat, a cumque magnam beatae nobis sapiente est quia quam consectetur voluptatum pariatur excepturi reprehenderit dignissimos quo deleniti perferendis saepe temporibus minus deserunt nisi aperiam doloremque. Maxime sequi quas nihil, ab quasi reprehenderit corrupti veniam repellendus, necessitatibus doloribus corporis ex accusamus non provident, facere dignissimos sunt dolorum eos reiciendis.</p>
+        </div>
+        <button id="meet_button" onclick="redirectTo()">Conhecer a Lenda</button>
+    </main>
+
+    <div class="SelectArea">
+        <div id="ic_after" class="containerIc" data-id="0" onclick="selectLegends(event)">
+            <img src="./assets/images/lucasmontanoicon.png" alt="lucas_montano_icon">
+        </div>
+        <div id="ic_normal" class="containerIc" data-id="1" onclick="selectLegends(event)">
+            <img src="./assets/images/deyvinicon.jpg" alt="deyvin_icon">
+        </div>
+        <div id="ic_normal" class="containerIc" data-id="2" onclick="selectLegends(event)">
+            <img src="./assets/images/filipedeschamps.jpg" alt="filipe_deschamps_icon">
+        </div>
+        <div id="ic_normal" class="containerIc" data-id="3" onclick="selectLegends(event)">
+            <img src="./assets/images/jovemtranquilão1.jpg" alt="jovem_tranquilao_icon">
+        </div>
+        <div id="ic_normal" class="containerIc" data-id="4" onclick="selectLegends(event)">
+            <img src="./assets/images/fabioakitaicon.jpg" alt="fabio_akita_icon">
+        </div>
+        <div id="ic_normal" class="containerIc" data-id="5" onclick="selectLegends(event)">
+            <img src="./assets/images/diegofernandes.png" alt="diego_fernandes_icon">
+        </div>
+        <div id="ic_normal" class="containerIc" data-id="6" onclick="selectLegends(event)">
+            <img src="./assets/images/gustavoguanabara.jpg" alt="gustavo_guanabara_icon">
+        </div>
+        <div id="ic_normal" class="containerIc" data-id="7" onclick="selectLegends(event)">
+            <img src="./assets/images/berodev.jpg" alt="bero_dev_icon">
+        </div>
+    </div>
+
+    <script src="./scripts/SelectLegend.js"></script>
+</body>
+</html>
